@@ -1,0 +1,22 @@
+.titleHome {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: Monserrat;
+}
+
+.containerHomeTitle {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+#clickMe {
+    margin: 25px;
+    background-color: #ed2424;
+    height: 50px;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0 2px 8px rgba(26,26,26,.1);
+}
