@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/stylesIndex.css" />
+    <link rel="stylesheet" href="/CSS/stylesLogin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <nav id="navbarPrincipal" class="navbarGral navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="linkNavbar navbar-brand" href="/HTML/index.html">
+          <img
+            src="/assets/OM.png"
+            alt=""
+            class="logoNav d-inline-block align-text-top"
+          />
+          Oru Market
+        </a>
+      </div>
+    </nav>
+    <button id="showModalBtn">Iniciar Sesión</button>
+
+    <div id="loginModal" class="modal">
+      <div class="modalContent">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="">Iniciar Sesión</h2>
+        <form class="formModal" id="formLogin">
+          <label class="txtFormTitle" for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label class="txtFormTitle" for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button id="btnLogin" class="buttonModal" type="submit">
+            Iniciar Sesión
+          </button>
+        </form>
+        <a class="linkModal" href="#" id="forgotPassword"
+          >¿Olvidaste tu contraseña?</a
+        >
+        <a class="linkModal" href="/HTML/login.html" id="forgotPassword"
+          >Crear nuevo Usuario</a
+        >
+      </div>
+    </div>
+    <div id="bienvenidaUser" class="container-bienvenida"></div>
+    <script src="/JS/homeJS/index.js"></script>
+  </body>
+</html>

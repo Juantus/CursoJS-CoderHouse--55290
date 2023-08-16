@@ -1,0 +1,48 @@
+
+.navbarGral {
+  max-width: 1296px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.logoNav {
+  max-width: 50px;
+  border-radius: 50px;
+}
+
+.linkNavbar {
+  display: flex;
+  align-items: center;
+}
+
+.containerLogin {
+  max-width: 1296px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.input-containerLogin {
+  margin-bottom: 25px;
+}
+
+.input-containerLogin label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-containerLogin input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#errorAlert {
+  display: none;
+  color: red;
+  margin-bottom: 10px;
+}
