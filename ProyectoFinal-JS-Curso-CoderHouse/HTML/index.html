@@ -23,17 +23,38 @@
   <body>
     <nav id="navbarPrincipal" class="navbarGral navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="linkNavbar navbar-brand" href="/HTML/index.html">
+        <a class="linkNavbar navbar-brand" href="../HTML/index.html">
           <img
-            src="/assets/OM.png"
+            src="../assets/OM.png"
             alt=""
             class="logoNav d-inline-block align-text-top"
           />
           Oru Market
         </a>
       </div>
+      <div class="nav-item dropdown">
+        <a
+          id="btnCat"
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Categorias
+        </a>
+        <ul id="tabsCategory" class="dropdown-menu"></ul>
+      </div>
+      <button id="showModalBtn" class="btn btn-outline-info" type="submit">
+        Iniciar Sesión
+      </button>
     </nav>
-    <button id="showModalBtn">Iniciar Sesión</button>
+
+    <div class="containerBanner">
+      <img src="../assets/En este sitio solo encontraras productos publicados en Meli y se te redirigira a la pagina del vendedor.png" alt="Banner Principal" class="imgBanner">
+    </div>
+
+    <div id="containerId" class="ContainerGralHome"></div>
 
     <div id="loginModal" class="modal">
       <div class="modalContent">
@@ -53,12 +74,15 @@
         <a class="linkModal" href="#" id="forgotPassword"
           >¿Olvidaste tu contraseña?</a
         >
-        <a class="linkModal" href="/HTML/login.html" id="forgotPassword"
+        <a class="linkModal" href="../HTML/login.html" id="forgotPassword"
           >Crear nuevo Usuario</a
         >
       </div>
     </div>
+
     <div id="bienvenidaUser" class="container-bienvenida"></div>
-    <script src="/JS/homeJS/index.js"></script>
+    <script src="../JS/homeJS/index.js"></script>
+    <script src="../JS/homeJS/tabsCategory.js"></script>
+    <script src="../JS/homeJS/renderProduct.js"></script>
   </body>
 </html>

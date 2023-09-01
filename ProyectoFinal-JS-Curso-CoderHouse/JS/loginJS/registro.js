@@ -3,9 +3,12 @@ const errAlert = d.getElementById("errorAlert");
 const btnRegistro = d.getElementById("btnRegistrar");
 const formNew = d.getElementById("formNewUser");
 
+//Tomamos los valores ingresados en el formulario de creación de usuario y los enviamos a MD
+//Validamos que las contraseñas sean iguales.
+//Luego mostramos popup indicativo de registro correcto y redireccionamos a nuestra landing principal.
+
 btnRegistro.addEventListener("click", function (event) {
   event.preventDefault();
-  setAlert();
   const userName = d.getElementById("username");
   const userMail = d.getElementById("email");
   const userPass = d.getElementById("password");
@@ -22,6 +25,8 @@ btnRegistro.addEventListener("click", function (event) {
 
     pushUser(newUser);
     formNew.reset();
+    swal("Se creo el usuario correctamente", "Te redirigiremos de nuevo al sitio", "success")
+    .then(() => {window.open("../../HTML/index.html")})
   } else {
     setAlert("Las contraseñas no son iguales.");
   }
